@@ -152,15 +152,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917625405384988613, guid: 4bac4c37d8d374f2ea39f4bb137017ba, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4917625405384988613, guid: 4bac4c37d8d374f2ea39f4bb137017ba, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4917625405384988613, guid: 4bac4c37d8d374f2ea39f4bb137017ba, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4917625405384988613, guid: 4bac4c37d8d374f2ea39f4bb137017ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -217,7 +217,7 @@ PrefabInstance:
     - target: {fileID: 7094107250266058567, guid: 4bac4c37d8d374f2ea39f4bb137017ba, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2011765761, guid: e6c6159cd568648859580dc3c32d3f96, type: 3}
+      objectReference: {fileID: 21300000, guid: 793ab9695cbd84ec08de1e4b4c6467e1, type: 3}
     - target: {fileID: 7094107250266058567, guid: 4bac4c37d8d374f2ea39f4bb137017ba, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -16604,15 +16604,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 101165304944616318, guid: 9073c55fc03e842358ff067d7f35f01d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 101165304944616318, guid: 9073c55fc03e842358ff067d7f35f01d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 101165304944616318, guid: 9073c55fc03e842358ff067d7f35f01d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 101165304944616318, guid: 9073c55fc03e842358ff067d7f35f01d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16673,7 +16673,7 @@ PrefabInstance:
     - target: {fileID: 7133072332522655618, guid: 9073c55fc03e842358ff067d7f35f01d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 421195371, guid: e6c6159cd568648859580dc3c32d3f96, type: 3}
+      objectReference: {fileID: 21300000, guid: 793ab9695cbd84ec08de1e4b4c6467e1, type: 3}
     - target: {fileID: 7133072332522655618, guid: 9073c55fc03e842358ff067d7f35f01d, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -16875,6 +16875,18 @@ PrefabInstance:
     - target: {fileID: 4676423901176483304, guid: 2d306ff8a7c5a41949a6530b916fc375, type: 3}
       propertyPath: orthographic size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4676423901176483304, guid: 2d306ff8a7c5a41949a6530b916fc375, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.09878958
+      objectReference: {fileID: 0}
+    - target: {fileID: 4676423901176483304, guid: 2d306ff8a7c5a41949a6530b916fc375, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.09878958
+      objectReference: {fileID: 0}
+    - target: {fileID: 4676423901176483304, guid: 2d306ff8a7c5a41949a6530b916fc375, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.11320752
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

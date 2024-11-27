@@ -13,27 +13,42 @@ public class CameraController : MonoBehaviour
     {
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
         
-        // 플레이어 오브젝트를 찾습니다.
-        player = GameObject.FindGameObjectWithTag("Player");
+        if (virtualCamera == null)
+        {
+            Debug.LogError("CinemachineVirtualCamera가 이 오브젝트에 연결되어 있지 않습니다.");
+            return;  // virtualCamera가 없으면 이후 코드 실행을 막습니다.
+        }
+        // // 플레이어 오브젝트를 찾습니다.
+        // player = GameObject.FindGameObjectWithTag("Player");
 
-        if (player != null)
-        {
-            // CinemachineVirtualCamera의 Follow 속성 설정
-            virtualCamera.Follow = player.transform;
-        }
-        else
-        {
-            Debug.LogWarning("Player 태그를 가진 오브젝트를 찾을 수 없습니다.");
-        }
+        // if (player != null)
+        // {
+        //     // CinemachineVirtualCamera의 Follow 속성 설정
+        //     virtualCamera.Follow = player.transform;
+        // }
+        // else
+        // {
+        //     Debug.LogWarning("Player 태그를 가진 오브젝트를 찾을 수 없습니다.");
+        // }
     }
 
     // Update is called once per frame
     void Update()
     {
-        // 카메라가 항상 플레이어를 따라가도록 유지
-        if (virtualCamera.Follow == null && player != null)
+        if (player == null)
         {
-            virtualCamera.Follow = player.transform;
+            player = GameObject.FindGameObjectWithTag("Player");
+            
+            if (player != null)
+            {
+                // player가 발견되면 카메라가 player를 따라가도록 설정
+                virtualCamera.Follow = player.transform;
+            }
         }
+        // 카메라가 항상 플레이어를 따라가도록 유지
+        // if (virtualCamera.Follow == null && player != null)
+        // {
+        //     virtualCamera.Follow = player.transform;
+        // }
     }
 }
