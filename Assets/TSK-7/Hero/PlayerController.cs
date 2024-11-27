@@ -10,9 +10,10 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     SpriteRenderer rend;
     // Start is called before the first frame update
-    public float moveSpeed = 1f; 
+    public float moveSpeed = 5f; 
     void Start()
     {
+        this.moveSpeed = 5f;
         this.rigid2D = GetComponent<Rigidbody2D>();
         this.animator = GetComponent<Animator>();
         rend = GetComponent<SpriteRenderer>();
@@ -26,7 +27,7 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        Vector2 movement = movementInput * moveSpeed * Time.fixedDeltaTime;
+        Vector2 movement = movementInput * moveSpeed * Time.deltaTime;
         rigid2D.MovePosition(rigid2D.position + movement);
 
         if (movementInput != Vector2.zero)
@@ -39,6 +40,11 @@ public class PlayerController : MonoBehaviour
         else
         {
             this.animator.SetBool("isWalking", false);
+        }
+
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            this.animator.SetTrigger("skillTrigger");
         }
         
         // if (true) // hp 0일떄
