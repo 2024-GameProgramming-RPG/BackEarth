@@ -15,7 +15,6 @@ public class CameraController : MonoBehaviour
         
         if (virtualCamera == null)
         {
-            Debug.LogError("CinemachineVirtualCamera가 이 오브젝트에 연결되어 있지 않습니다.");
             return;  // virtualCamera가 없으면 이후 코드 실행을 막습니다.
         }
         // // 플레이어 오브젝트를 찾습니다.
@@ -45,10 +44,5 @@ public class CameraController : MonoBehaviour
                 virtualCamera.Follow = player.transform;
             }
         }
-        // 카메라가 항상 플레이어를 따라가도록 유지
-        // if (virtualCamera.Follow == null && player != null)
-        // {
-        //     virtualCamera.Follow = player.transform;
-        // }
     }
 }
