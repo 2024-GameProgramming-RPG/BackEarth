@@ -68,14 +68,7 @@ public class GameManager : MonoBehaviour
                     RestartGame();
                 }
             }
-            if (isEnded)
-            {
-                if (!isFailed && GUILayout.Button("NEXT"))
-                {
-                    SceneManager.LoadScene("TSK-14"); // "NEXT" 버튼을 누를 때만 씬 이동
-                }
-            }
-
+            
             
 
             GUILayout.FlexibleSpace();
@@ -110,8 +103,12 @@ public class GameManager : MonoBehaviour
     public static void EndGame()
     {
         Time.timeScale = 0f;
-        isEnded = true;
-        SceneManager.LoadScene("TSK-14");
+
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings; 
+
+        // 다음 씬 로드
+        SceneManager.LoadScene(nextSceneIndex);
     }
     public static void FailedGame()
     {
