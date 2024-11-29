@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8066961734353508628}
   - component: {fileID: 5800120952559696386}
   - component: {fileID: 8320141311399568969}
-  - component: {fileID: -3425090709830229926}
   - component: {fileID: -7438348519431496982}
   - component: {fileID: 4951392222968673356}
   - component: {fileID: 4620823510806389240}
@@ -32,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -119,19 +118,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &-3425090709830229926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4826818348081210391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac658cb5ea9da4d2398c87af33654a50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
 --- !u!50 &-7438348519431496982
 Rigidbody2D:
   serializedVersion: 4

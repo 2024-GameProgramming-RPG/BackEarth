@@ -3,32 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement; //게임 장면을 관리해주는 스크립트가 담긴 패키지
+using Cinemachine;
+
 
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
+    public CinemachineVirtualCamera virtualCamera; // CinemachineVirtualCamera 참조 추가
     Vector3 StartingPos;
     Quaternion StartingRotate;
-    // GameObject temp;
     bool isStarted = false;
     static bool isEnded = false;
-    // Start is called before the first frame update
-    void Awake()// 가장 먼저 시작
+
+    void Awake()
     {
-        Time.timeScale = 0f;
-        // 게임 정지, 
+        Time.timeScale = 0f; // 게임 정지
     }
+
     void Start()
     {
         StartingPos = GameObject.FindGameObjectWithTag("Start").transform.position;
         StartingRotate = GameObject.FindGameObjectWithTag("Start").transform.rotation;
-        // 시작지점의 위치, 회전변수 선언
-        // this.temp = GameObject.Find("temp");
     }
+
     void OnGUI()
     {
         if (!isStarted) {
-            GUILayout.BeginArea(new Rect(0,0,Screen.width, Screen.height));
+            GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
             GUILayout.BeginHorizontal();
             GUILayout.FlexibleSpace();
             GUILayout.BeginVertical();
@@ -36,18 +37,21 @@ public class GameManager : MonoBehaviour
 
             GUILayout.Label("R U Ready?");
 
-            if (GUILayout.Button("START")){
+            if (GUILayout.Button("START"))
+            {
                 isStarted = true;
                 StartGame();
             }
+
             GUILayout.FlexibleSpace();
             GUILayout.EndVertical();
             GUILayout.FlexibleSpace();
             GUILayout.EndHorizontal();
             GUILayout.EndArea();
         }
-        else if (isEnded){
-            GUILayout.BeginArea(new Rect(0,0,Screen.width, Screen.height));
+        else if (isEnded)
+        {
+            GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
             GUILayout.BeginHorizontal();
             GUILayout.FlexibleSpace();
             GUILayout.BeginVertical();
@@ -55,10 +59,12 @@ public class GameManager : MonoBehaviour
 
             GUILayout.Label("Thank you!");
 
-            if (GUILayout.Button("RESTART")){
+            if (GUILayout.Button("RESTART"))
+            {
                 // SceneManager.LoadScene("Main_Flip", LoadSceneMode.Single);
-                isEnded= false;
+                isEnded = false;
             }
+
             GUILayout.FlexibleSpace();
             GUILayout.EndVertical();
             GUILayout.FlexibleSpace();
@@ -67,12 +73,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void StartGame(){
+    void StartGame()
+    {
         Time.timeScale = 1f;
-        // GameObject standingCamera = GameObject.FindGameObjectWithTag("MainCamera");
-        // standingCamera.SetActive(false);
+
+        // StartingPos가 이미 설정되어 있다면 그대로 사용, 새로운 위치로 설정 가능
         StartingPos = new Vector3(StartingPos.x, StartingPos.y, StartingPos.z);
-        Instantiate(player, StartingPos, StartingRotate);
+
+        // 플레이어 프리팹을 생성
+        GameObject playerInstance = Instantiate(player, StartingPos, StartingRotate);
+
+        // 생성된 플레이어를 카메라의 Follow 속성에 설정
+        if (virtualCamera != null)
+        {
+            virtualCamera.Follow = playerInstance.transform; // 카메라가 플레이어를 따라가도록 설정
+        }
+        else
+        {
+            Debug.LogError("Cinemachine Virtual Camera가 설정되지 않았습니다.");
+        }
     }
 
     public static void EndGame()
@@ -81,9 +100,8 @@ public class GameManager : MonoBehaviour
         isEnded = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // this.temp.GetComponent<Text>().text = "hi";
+        // 필요 시 추가적인 업데이트 코드 작성 가능
     }
 }
