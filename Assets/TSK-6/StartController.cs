@@ -5,6 +5,7 @@ public class StartController : MonoBehaviour
 {
     public void LoadLevel1()
     {
-        SceneManager.LoadScene("TSK-1-LV1"); // LV1으로 씬 이동
+        Debug.Log("Test");
+        SceneManager.LoadScene("TSK-13"); // LV1으로 씬 이동
     }
 }
