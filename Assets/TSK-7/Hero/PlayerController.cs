@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(3f); // 3초 대기 (죽는 애니메이션 시간)
 
-        GameManager.EndGame(); // 게임 종료
+        GameManager.FailedGame(); // 게임 종료
     }
     IEnumerator StunPlayer(float duration)
     {

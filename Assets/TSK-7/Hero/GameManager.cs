@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     Quaternion StartingRotate;
     bool isStarted = false;
     static bool isEnded = false;
+    static bool isFailed = false;
 
     void Awake()
     {
@@ -58,12 +59,17 @@ public class GameManager : MonoBehaviour
             GUILayout.FlexibleSpace();
 
             GUILayout.Label("Thank you!");
-
-            if (GUILayout.Button("RESTART"))
+            if(isFailed)
             {
-                // SceneManager.LoadScene("Main_Flip", LoadSceneMode.Single);
-                isEnded = false;
+                if (GUILayout.Button("RESTART"))
+                {
+                    // SceneManager.LoadScene("Main_Flip", LoadSceneMode.Single);
+                    //isEnded = false;
+                    RestartGame();
+                }
             }
+            
+            
 
             GUILayout.FlexibleSpace();
             GUILayout.EndVertical();
@@ -97,6 +103,17 @@ public class GameManager : MonoBehaviour
     public static void EndGame()
     {
         Time.timeScale = 0f;
+
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings; 
+
+        // 다음 씬 로드
+        SceneManager.LoadScene(nextSceneIndex);
+    }
+    public static void FailedGame()
+    {
+        Time.timeScale = 0f;
+        isFailed = true;
         isEnded = true;
     }
 
@@ -104,4 +121,13 @@ public class GameManager : MonoBehaviour
     {
         // 필요 시 추가적인 업데이트 코드 작성 가능
     }
+    
+    void RestartGame() 
+    {
+        isEnded = false;
+        isStarted = false;
+        isFailed = false; // 실패 상태 초기화
+        Time.timeScale = 1f;   
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+    }      
 }
