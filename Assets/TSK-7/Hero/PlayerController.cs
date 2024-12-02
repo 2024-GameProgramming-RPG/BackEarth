@@ -108,4 +108,10 @@ public class PlayerController : MonoBehaviour
 
         isStunned = false; // 스턴 상태 해제
     }
+
+     public int GetCurrentHP()
+    {
+        return hp;
+    }
+
 }
