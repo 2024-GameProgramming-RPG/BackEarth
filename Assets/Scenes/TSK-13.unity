@@ -20736,12 +20736,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac658cb5ea9da4d2398c87af33654a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 10
   moveCount: 0
-  maxMoves: 50
+  maxMoves: 35
   moveDirectionX: 0
   moveDirectionY: -1
-  moveInterval: 0.3
+  moveInterval: 0.2
   moveTimer: 0
 --- !u!1001 &1726280278
 PrefabInstance:
