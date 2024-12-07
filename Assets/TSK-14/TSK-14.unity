@@ -140,11 +140,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5273683577256491828, guid: b1c39f18be7fd42c2b7d471671615fb8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.71
+      value: 6.08
       objectReference: {fileID: 0}
     - target: {fileID: 5273683577256491828, guid: b1c39f18be7fd42c2b7d471671615fb8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.62
+      value: -2.57
       objectReference: {fileID: 0}
     - target: {fileID: 5273683577256491828, guid: b1c39f18be7fd42c2b7d471671615fb8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -388,11 +388,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5273683577256491828, guid: b1c39f18be7fd42c2b7d471671615fb8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.78
+      value: -6.02
       objectReference: {fileID: 0}
     - target: {fileID: 5273683577256491828, guid: b1c39f18be7fd42c2b7d471671615fb8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.71
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 5273683577256491828, guid: b1c39f18be7fd42c2b7d471671615fb8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -788,12 +788,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac658cb5ea9da4d2398c87af33654a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 25
+  moveSpeed: 20
   moveCount: 0
   maxMoves: 25
   moveDirectionX: 1
   moveDirectionY: 0
-  moveInterval: 0.1
+  moveInterval: 0.2
   moveTimer: 0
 --- !u!1 &358729239
 GameObject:
@@ -24426,12 +24426,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac658cb5ea9da4d2398c87af33654a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 30
   moveCount: 0
-  maxMoves: 3
-  moveDirectionX: 1
+  maxMoves: 20
+  moveDirectionX: -1
   moveDirectionY: 0
-  moveInterval: 0.3
+  moveInterval: 0.2
   moveTimer: 0
 --- !u!1 &1321303945 stripped
 GameObject:
@@ -24998,11 +24998,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5273683577256491828, guid: b1c39f18be7fd42c2b7d471671615fb8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.04
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: 5273683577256491828, guid: b1c39f18be7fd42c2b7d471671615fb8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.65
+      value: -15.64
       objectReference: {fileID: 0}
     - target: {fileID: 5273683577256491828, guid: b1c39f18be7fd42c2b7d471671615fb8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25466,11 +25466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
       propertyPath: m_SortingLayer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
       propertyPath: m_SortingLayerID
-      value: 0
+      value: -917427907
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25588,7 +25588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5800120952559696386, guid: f8094082cb7714ced989ac9d602ceed6, type: 3}
       propertyPath: m_SortingLayerID
-      value: -348219599
+      value: -917427907
       objectReference: {fileID: 0}
     - target: {fileID: 8066961734353508628, guid: f8094082cb7714ced989ac9d602ceed6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25655,12 +25655,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac658cb5ea9da4d2398c87af33654a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 30
   moveCount: 0
-  maxMoves: 3
+  maxMoves: 20
   moveDirectionX: 1
   moveDirectionY: 0
-  moveInterval: 0.3
+  moveInterval: 0.2
   moveTimer: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

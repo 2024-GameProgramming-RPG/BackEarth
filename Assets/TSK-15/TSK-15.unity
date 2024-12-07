@@ -218,6 +218,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1034,6 +1042,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1573,6 +1589,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1879,6 +1903,14 @@ PrefabInstance:
     - target: {fileID: 5405245042007159292, guid: 5efedd6b790684898bdf92caba626857, type: 3}
       propertyPath: m_TagString
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3025,6 +3057,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3145,6 +3185,14 @@ PrefabInstance:
     - target: {fileID: 5405245042007159292, guid: 5efedd6b790684898bdf92caba626857, type: 3}
       propertyPath: m_TagString
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13276,6 +13324,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13376,6 +13432,14 @@ PrefabInstance:
     - target: {fileID: 5405245042007159292, guid: 5efedd6b790684898bdf92caba626857, type: 3}
       propertyPath: m_TagString
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13590,6 +13654,14 @@ PrefabInstance:
     - target: {fileID: 5405245042007159292, guid: 5efedd6b790684898bdf92caba626857, type: 3}
       propertyPath: m_TagString
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14380,6 +14452,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14704,6 +14784,14 @@ PrefabInstance:
     - target: {fileID: 5405245042007159292, guid: 5efedd6b790684898bdf92caba626857, type: 3}
       propertyPath: m_TagString
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15496,6 +15584,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16287,6 +16383,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16590,6 +16694,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16710,6 +16822,14 @@ PrefabInstance:
     - target: {fileID: 5405245042007159292, guid: 5efedd6b790684898bdf92caba626857, type: 3}
       propertyPath: m_TagString
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536360875836068846, guid: 5efedd6b790684898bdf92caba626857, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -917427907
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
